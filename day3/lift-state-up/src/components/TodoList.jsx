@@ -1,3 +1,4 @@
+import { Divider, List } from "antd"
 import { useState } from "react"
 import Summary from "./Summary"
 import Task from "./Task"
@@ -29,13 +30,23 @@ const TodoList = ({ title }) => {
 
 	return (
 		<div>
-			<h1>{title}</h1>
+			<Divider orientation="left">{title}</Divider>
 
 			<Summary tasks={tasks} />
 
-			{tasks.map((task) => (
+			<List
+				style={{ marginTop: "1rem" }}
+				size="small"
+				bordered
+				dataSource={tasks}
+				renderItem={(item) => (
+					<Task key={item.id} {...item} toggleTask={toggleTask} />
+				)}
+			/>
+
+			{/* {tasks.map((task) => (
 				<Task key={task.id} {...task} toggleTask={toggleTask} />
-			))}
+			))} */}
 		</div>
 	)
 }

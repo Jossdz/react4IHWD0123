@@ -1,3 +1,5 @@
+import { Badge, Space, Avatar } from "antd"
+
 function Summary({ tasks }) {
 	// let done = 0
 
@@ -22,8 +24,27 @@ function Summary({ tasks }) {
 
 	return (
 		<div>
-			<h3>Total: {tasks.length}</h3>
-			<h3>Completed: {done}</h3>
+			<Space size="middle" style={{ marginRight: "20px" }}>
+				<Badge count={tasks.length}>
+					<Avatar shape="square" size="large">
+						Total
+					</Avatar>
+				</Badge>
+			</Space>
+			<Space size="middle">
+				<Badge count={done}>
+					<Avatar
+						style={{
+							backgroundColor: "green",
+							color: "white"
+						}}
+						shape="square"
+						size="large"
+					>
+						<span style={{ color: "white" }}>✓</span>
+					</Avatar>
+				</Badge>
+			</Space>
 		</div>
 	)
 }

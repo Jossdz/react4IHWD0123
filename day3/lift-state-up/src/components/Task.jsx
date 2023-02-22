@@ -1,17 +1,21 @@
+import { Button, List, Typography } from "antd"
+
 function Task({ name, id, done, toggleTask }) {
 	return (
-		<li>
+		<List.Item>
 			<b>{id}</b>
-			<p
+			<Typography.Text
 				style={{
 					textDecoration: done ? "line-through" : "none"
 				}}
 			>
 				{name}
-			</p>
+			</Typography.Text>
 
-			<button onClick={() => toggleTask(id)}>toggle</button>
-		</li>
+			<Button size="small" type="primary" onClick={() => toggleTask(id)}>
+				toggle
+			</Button>
+		</List.Item>
 	)
 }
 
