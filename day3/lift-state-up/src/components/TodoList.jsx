@@ -1,5 +1,7 @@
 import { Divider, List } from "antd"
 import { useState } from "react"
+
+import CreateListElement from "./CreateListElement"
 import Summary from "./Summary"
 import Task from "./Task"
 
@@ -28,11 +30,23 @@ const TodoList = ({ title }) => {
 		setTasks(listTodos)
 	}
 
+	const createNewElement = ({ inputName, inputId, inputIsComplete }) => {
+		const newElement = {
+			name: inputName,
+			id: inputId,
+			done: inputIsComplete
+		}
+
+		setTasks([...tasks, newElement])
+	}
+
 	return (
 		<div>
 			<Divider orientation="left">{title}</Divider>
 
 			<Summary tasks={tasks} />
+
+			<CreateListElement createNewElement={createNewElement} />
 
 			<List
 				style={{ marginTop: "1rem" }}
