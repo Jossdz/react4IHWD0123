@@ -51,41 +51,8 @@ function CreateListElement({ createNewElement }) {
 				}}
 			/>
 			<button type="submit">Submit</button>
-			{/* <button type="reset">reset</button> */}
 		</form>
 	)
 }
-
-// Form simplificado
-
-// function CreateListElement({ createNewElement }) {
-// 	const submit = (e) => {
-// 		e.preventDefault()
-// 		console.dir(e.target)
-// 		createNewElement({
-// 			inputId: e.target[0].value,
-// 			inputName: e.target[1].value,
-// 			inputIsComplete: e.target[2].checked
-// 		})
-// 	}
-
-// 	return (
-// 		<form
-// 			onSubmit={submit}
-// 			style={{
-// 				marginTop: "1rem"
-// 			}}
-// 		>
-// 			<label htmlFor="id">Item id:</label>
-// 			<input type="number" name="id" id="id" min={0} />
-// 			<label htmlFor="name">Item name:</label>
-// 			<input type="text" name="name" id="name" />
-// 			<label htmlFor="isCompleted">Is Completed</label>
-// 			<input type="checkbox" name="isCompleted" id="isCompleted" />
-// 			<button type="submit">Submit</button>
-// 			<button type="reset">reset</button>
-// 		</form>
-// 	)
-// }
 
 export default CreateListElement

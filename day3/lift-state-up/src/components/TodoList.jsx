@@ -2,6 +2,7 @@ import { Divider, List } from "antd"
 import { useState } from "react"
 
 import CreateListElement from "./CreateListElement"
+import CreateSimpleElement from "./CreateSimpleElement"
 import Summary from "./Summary"
 import Task from "./Task"
 
@@ -46,7 +47,8 @@ const TodoList = ({ title }) => {
 
 			<Summary tasks={tasks} />
 
-			<CreateListElement createNewElement={createNewElement} />
+			{/* <CreateListElement createNewElement={createNewElement} /> */}
+			<CreateSimpleElement createNewElement={createNewElement} />
 
 			<List
 				style={{ marginTop: "1rem" }}
