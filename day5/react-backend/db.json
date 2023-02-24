@@ -1,0 +1,40 @@
+{
+  "apartments": [
+    {
+      "id": 1,
+      "img": "https://brewpublic.com/wp-content/uploads/2020/07/image-of-Stone-Tangerine-Express-Hazy-IPA-courtesy-of-Stone-Brewing.jpg",
+      "title": "project x house",
+      "pricePerDay": 10
+    },
+    {
+      "img": "https://assets.untappd.com/site/beer_logos_hd/beer-1512388_94205_hd.jpeg",
+      "title": "Stone",
+      "pricePerDay": "3",
+      "id": 2
+    },
+    {
+      "img": "https://assets.untappd.com/site/beer_logos_hd/beer-1512388_94205_hd.jpeg",
+      "title": "yolo",
+      "pricePerDay": "5",
+      "id": 3
+    },
+    {
+      "img": "https://assets.untappd.com/site/beer_logos_hd/beer-1512388_94205_hd.jpeg",
+      "title": "er",
+      "pricePerDay": "4",
+      "id": 4
+    },
+    {
+      "img": "https://assets.untappd.com/site/beer_logos_hd/beer-1512388_94205_hd.jpeg",
+      "title": "Departamento de Memi",
+      "pricePerDay": "1000",
+      "id": 5
+    },
+    {
+      "img": "https://assets.untappd.com/site/beer_logos_hd/beer-1512388_94205_hd.jpeg",
+      "title": "fsdf",
+      "pricePerDay": "3333",
+      "id": 6
+    }
+  ]
+}
